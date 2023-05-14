@@ -63,11 +63,11 @@ namespace Distance
 						PluginLog.LogDebug( $"Aggro data entry removed because no such BNpcName ID exists: {mKnownAggroEntities[i].TerritoryType}, {mKnownAggroEntities[i].BNpcID}, {mKnownAggroEntities[i].EnglishName}" );
 						mKnownAggroEntities.RemoveAt( i );
 					}
-					else if( !mKnownAggroEntities[i].EnglishName.Equals( BNpcNameSheet.GetRow( mKnownAggroEntities[i].BNpcID ).Singular, StringComparison.InvariantCultureIgnoreCase ) )
-					{
-						PluginLog.LogDebug( $"Aggro data entry removed because BNpcName Mismatch: {mKnownAggroEntities[i].TerritoryType}, {mKnownAggroEntities[i].BNpcID}, {mKnownAggroEntities[i].EnglishName}" );
-						mKnownAggroEntities.RemoveAt( i );
-					}
+					//else if( !mKnownAggroEntities[i].EnglishName.Equals( BNpcNameSheet.GetRow( mKnownAggroEntities[i].BNpcID ).Singular, StringComparison.InvariantCultureIgnoreCase ) )
+					//{
+					//	PluginLog.LogDebug( $"Aggro data entry removed because BNpcName Mismatch: {mKnownAggroEntities[i].TerritoryType}, {mKnownAggroEntities[i].BNpcID}, {mKnownAggroEntities[i].EnglishName}" );
+					//	mKnownAggroEntities.RemoveAt( i );
+					//}
 				}
 			}
 
